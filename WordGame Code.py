@@ -1,10 +1,6 @@
 import random  # Import the random module to select a random word
 
 def display_word(word, guessed_letters):
-    """
-    Display the current state of the word with guessed letters revealed
-    and unguessed letters replaced with underscores.
-    """
     return " ".join([letter if letter in guessed_letters else "_" for letter in word])
 
 def hangman():
